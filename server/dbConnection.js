@@ -9,6 +9,6 @@ dotenv.config();
 const dbConnectionString = process.env.DB_URL;
 
 //set up the pool 
-const db = new pg.Pool({
+export const db = new pg.Pool({
     connectionString : dbConnectionString
 })

@@ -63,3 +63,22 @@ h1{
     
 }
 
+
+@media (width <= 600px) {
+    #guest-form {
+      width: 100%;
+      height: 400px;
+      position: absolute;
+      bottom: 3vh;
+      left: 50%;
+      transform: translateX(-50%);  
+      z-index: 10;   
+
+      
+       
+    }
+    body {
+        height: 100vh;
+        min-height: 60vh;
+    }
+    }

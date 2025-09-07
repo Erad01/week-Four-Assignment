@@ -15,10 +15,13 @@ function handleSubmit(event){
         headers: {
             "content-type": "application/json"
         },
-        body:JSON.stringify({formValues}),
+        body: JSON.stringify({formValues}),
     });
-}
 
+    document.getElementById("guest-form").reset();
+    location.reload();
+
+}
 
 
 async function getGuestMessage(){
@@ -32,7 +35,6 @@ async function getGuestMessage(){
     
 
     for(let i = 0; i < guestMessage.length; i++){
-        
         //create an HTML element 5 elements
         const name = document.createElement("p");
         const contact = document.createElement("p");
@@ -42,6 +44,8 @@ async function getGuestMessage(){
                 
         //update the text content of the 5 elements
         name.textContent = guestMessage[i].name;
+        name.style.color = "blue";
+        name.style.marginTop = "15px";
         contact.textContent = guestMessage[i].contact;
         address.textContent = guestMessage[i].address;
         relationship.textContent = guestMessage[i].relationship;
@@ -58,12 +62,10 @@ async function getGuestMessage(){
         attendanceMessages.appendChild(message);
 
 
-
-
-
-
+        //refresh the form element
     }
 
+    
     
 }
 getGuestMessage()

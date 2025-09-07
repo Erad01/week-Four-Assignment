@@ -1,8 +1,65 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
+body {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: peru;
+  color: white;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.form-input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 30%;
+    max-width: 800px;
+}
+
+.form-input ::placeholder  {
+    font-size: 1rem;
+}
+
+#submit {
+    font-size: 2rem;
+    background-color: brown;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: beige;
+    border: none;
+}
+
+#submit:hover {
+    background-color: rgb(182, 59, 59);
+    color: white;
+    cursor: pointer;
+}
+
 #attendance-messages {
     height: 300px;
-    width: 500px;
+    max-width: 800px;
+    width: 70%;
     background-color: beige;
     overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    color: black;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    
 }
+

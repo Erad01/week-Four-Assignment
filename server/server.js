@@ -25,7 +25,7 @@ app.get("/", (req, res) =>{
 
 app.get("/guest", async (req, res) =>{
 
-    const query = await db.query(`SELECT name, contact, address, relationship, message FROM guest;`);
+    const query = await db.query(`SELECT id, name, contact, address, relationship, message FROM guest;`);
     console.log(query);
     res.json(query.rows)
 });
@@ -44,4 +44,6 @@ app.post("/add-guest", (req, res) =>{
     );
     res.json("Data Sent", query);
 });
+
+
 
